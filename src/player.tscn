@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Entrapta_hello.png" type="Texture" id=2]
+[ext_resource path="res://Entrapta_hello2.png" type="Texture" id=3]
+[ext_resource path="res://CameraFollow.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "walking",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 4.61833, 7.9743, 0.536867 )
+
+[node name="Player" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.20974, 0 )
+script = ExtResource( 1 )
+
+[node name="Target" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.278162, 7.51659, 4.20509 )
+
+[node name="Camera" type="Camera" parent="Target"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.4544, -6.75011 )
+current = true
+script = ExtResource( 4 )
+distance = 30.0
+height = 20.0
+
+[node name="Pivot" type="Spatial" parent="."]
+
+[node name="Character" type="AnimatedSprite3D" parent="Pivot"]
+transform = Transform( 0.999998, 0.00168184, -0.000436301, -0.00168156, 0.999998, 0.000635763, 0.00043738, -0.000635021, 1, -0.141446, 10.256, -3.94003 )
+frames = SubResource( 1 )
+animation = "walking"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.326579, 11.4356, -3.90468 )
+shape = SubResource( 2 )
