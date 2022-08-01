@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/terrian.glb-4ee117c07b16261b435ac8066e432753.scn"
+path="res://.import/terrian.glb-a38c81b9507e08b28c747893d23aab82.scn"
 
 [deps]
 
-source_file="res://terrian.glb"
-dest_files=[ "res://.import/terrian.glb-4ee117c07b16261b435ac8066e432753.scn" ]
+source_file="res://worlds/terrian.glb"
+dest_files=[ "res://.import/terrian.glb-a38c81b9507e08b28c747893d23aab82.scn" ]
 
 [params]
 

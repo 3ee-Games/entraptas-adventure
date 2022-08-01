@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Entrapta_hello.png-6478e3b7a489b2332c721e155162d2d3.s3tc.stex"
-path.etc2="res://.import/Entrapta_hello.png-6478e3b7a489b2332c721e155162d2d3.etc2.stex"
+path.s3tc="res://.import/Entrapta_hello.png-f21d432d7dc5c4f2caf51c3f36b4b955.s3tc.stex"
+path.etc2="res://.import/Entrapta_hello.png-f21d432d7dc5c4f2caf51c3f36b4b955.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Entrapta_hello.png"
-dest_files=[ "res://.import/Entrapta_hello.png-6478e3b7a489b2332c721e155162d2d3.s3tc.stex", "res://.import/Entrapta_hello.png-6478e3b7a489b2332c721e155162d2d3.etc2.stex" ]
+source_file="res://assets/Entrapta_hello.png"
+dest_files=[ "res://.import/Entrapta_hello.png-f21d432d7dc5c4f2caf51c3f36b4b955.s3tc.stex", "res://.import/Entrapta_hello.png-f21d432d7dc5c4f2caf51c3f36b4b955.etc2.stex" ]
 
 [params]
 
