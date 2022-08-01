@@ -25,7 +25,6 @@ func _physics_process(delta):
 		moving = true
 	else:
 		velocity.x = 0;
-		moving = false
 	
 	if (Input.is_action_pressed("move_down")):
 		velocity.z = move_speed;
@@ -35,7 +34,6 @@ func _physics_process(delta):
 		moving = true
 	else:
 		velocity.z = 0;
-		moving = false
 		
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y += jump_impulse
@@ -45,9 +43,9 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector3.UP)
 
 	global_translate(velocity * delta)
-	if (moving):
+	if (moving && is_on_floor()):
 		$Pivot/Character.play(moving_anim_name);
-	else:
+	elif(!moving && is_on_floor()):
 		$Pivot/Character.play(idle_anim_name);
 		
 	moving = false
