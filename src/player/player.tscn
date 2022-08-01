@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Entrapta_hello.png" type="Texture" id=2]
-[ext_resource path="res://Entrapta_hello2.png" type="Texture" id=3]
-[ext_resource path="res://CameraFollow.gd" type="Script" id=4]
+[ext_resource path="res://player/Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/Entrapta_hello.png" type="Texture" id=2]
+[ext_resource path="res://assets/Entrapta_hello2.png" type="Texture" id=3]
+[ext_resource path="res://player/CameraFollow.gd" type="Script" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "walking",
 "speed": 5.0
