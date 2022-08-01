@@ -22,14 +22,13 @@ animations = [ {
 extents = Vector3( 4.61833, 7.9743, 0.536867 )
 
 [node name="Player" type="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.20974, 0 )
 script = ExtResource( 1 )
 
 [node name="Target" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.278162, 7.51659, 4.20509 )
 
 [node name="Camera" type="Camera" parent="Target"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.4544, -6.75011 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.4544, 12.2503 )
 current = true
 script = ExtResource( 4 )
 distance = 30.0
